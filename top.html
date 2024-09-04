@@ -1,0 +1,67 @@
+<html>
+<head>
+<style>
+	body{
+		background-color : #FFF8DC;
+		overflow:hidden;
+	}
+	h1,h2{
+		color: #800000;
+	}
+	ul{
+		text-align:center;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #800000;
+	}
+	li{
+		display:inline;
+		float:left;
+		text-align:center;
+	}
+	li a{
+		display:block;
+		color:white;
+		text-align:center;
+		padding:14px 16px;
+		text-decoration:none;
+	}
+	.active, .link:hover {
+      		background-color:#BD8F8F ;
+ 		 color: white;
+	}	
+</style>
+</head>
+<body>
+	<center>
+		<h2><IMG SRC="logo.jpg" style="float:left; height:75px; width:75px;">R.V.R & J.C College Of Engineering<IMG SRC="logo.jpg" style="float:right; height:75px; width:75px;"><h1>
+		<h3>CULTURAL COMMITTEE</h2>
+	</center>
+	<div id="myDIV">
+	<ul>
+		<li class="link active"><a href="home.html" target="mainframe">Home</a></li>
+		<li class="link"><a href="about.html" target="mainframe">About us</a>
+		<li class="link"><a href="clubs.html" target="mainframe">Clubs</a>
+		<li class="link"><a href="events.html" target="mainframe">Events</a>
+		<li class="link"><a href="committee.html" target="mainframe">Committee</a>
+		<li class="link" style="float:right"><a href="feedback.html" target="mainframe">Feedback</a>
+		<li class="link" style="float:right" ><a href="contacts.html" target="mainframe">Contact Us</a>
+	</ul>
+	</div>
+<script>
+var header = document.getElementById("myDIV");
+var links = header.getElementsByClassName("link");
+for (var i = 0; i < links.length; i++) {
+  links[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+</script>
+
+</body>
+</head>
+	

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="web.css">
+    </head>
+<body>
+    <div class="container">
+        <h1>Register for the Event</h1>
+        <p class="event-description"><br>
+            The Digital is Organizing Website Development<br>
+            The Event is About the Website development on theme Cultural Committee or College Fest<br>
+            Compitetion on 20-July-2024<br>
+            It can Consist on minimum 2-Members Maximum 8-Members<br>   
+        </p>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="name"> College Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="name">Register Number:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+             <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="tel" name="number" required>
+            </div>
+
+            <div> 	
+					<label for="Branch: "> Branch:   </label>
+					
+					   <select id="branches" name="Branches">
+						   <br>
+					<br>
+                              <option value="select">select</option>  
+		              <option value=" CSBS">CSBS</option>
+		               <option value=" CSD">CSD</option>
+		               <option value="IT">IT</option>
+                               <option value="ECE">ECE</option>
+                               <option value="CSO">CSO</option>
+                               <option value="CSM">CSM</option>
+                               <option value="CIV">CIV</option>
+                               <option value="CHE">CHE</option>
+                               <option value="EEE">EEE</option>
+	            </select>
+                         </div>
+               <br>
+               <div>
+                    <label for=" Year: ">Year: </label>
+                    <select id="year" name="year">
+                    <option value="select">select</option>
+                    <option value=" I-year">I-YEAR</option>
+                    <option value=" II-year">II-YEAR</option>
+                    <option value=" III-year">III-YEAR</option>
+                    <option value=" IV-year">IV-YEAR</option>
+                    </select>
+               </div>
+              <br>
+              <br>
+
+            <button type="submit" onclick="alert('Your feedback is successfully submitted')">Register</button>
+        </form>
+        <div id="message"></div>
+    </div>
+</body>
+</html>
